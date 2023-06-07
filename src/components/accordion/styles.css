@@ -1,0 +1,70 @@
+
+.faq-item {
+  @apply border-b border-b-[#e4e4e4] bg-white 
+   
+}
+
+.faq-question {
+  @apply flex items-start md:items-center cursor-pointer justify-between  py-[15px] md:py-[30px];
+}
+
+.faq-question-text {
+  @apply text-black text-[18px] md:text-[20px] font-semibold leading-[26px]  w-[310px] lg:w-[600px]  border border-red-600;
+}
+
+.faq-icon {
+@apply focus:outline-none focus:ring focus:ring-violet-300 
+}
+
+.faq-answer {
+  @apply text-[#666666] text-[14px] font-normal leading-[24px]  bg-white w-[310px] lg:w-[600px] text-start
+    border border-red-600;
+}
+
+/* .heading{
+  @apply container font-semibold text-[19px] lg:text-[24px] lg:leading-[31px] mx-auto lg:max-w-[980px]  xl:max-w-[880px] text-[#E97408] pr-0 pl-10 lg:px-14 -ml-3 min-[450px]:w-[366px] min-[450px]:ml-6 min-[587px]:ml-24 min-[700px]:ml-36 md:ml-48 lg:w-[500px]  min-[1280px]:ml-52 min-[1440px]:ml-72 min-[1680px]:ml-[400px];
+}
+.parentContainer{
+  @apply container mx-auto px-6 rounded-2xl;
+}
+.firstChild{
+  @apply mx-auto md:px-6 md:pt-6 md:pb-6  md:py-5 w-[322px] -ml-6 min-[450px]:ml-3 min-[587px]:ml-10 min-[587px]:w-[401px] min-[700px]:ml-20 md:ml-12 bg-white md:w-[599px] lg:w-[800px] min-[1200px]:w-[880px] min-[1200px]:ml-10 xl:max-w-[880px] xl:ml-36 rounded-2xl;
+}
+
+.faqTitle{
+  @apply flex items-center text-[16px] w-[247px] min-[587px]:w-[401px] min-[587px]:ml-4 md:text-[20px] text-[#333333];
+}
+.button{
+  @apply flex items-center justify-between w-[322px] md:w-[550px] min-[587px]:w-[401px] lg:w-[750px] min-[1200px]:w-[800px] xl:w-[850px] p-4 font-medium text-left bg-gray-50;
+}
+.paraWraper{
+  @apply flex items-center justify-between w-[322px] min-[587px]:w-[401px] -ml-6 -mt-2 rounded-2xl p-5 font-medium text-left xl:max-w-[880px] mx-auto bg-white rounded-bl-lg rounded-br-lg 
+}
+.paragraph{
+  @apply font-medium text-[16px] leading-6 text-[#858A8F] md:px-[32px] lg:pb-[7px]
+} 
+
+.heading{
+  @apply   text-[20px] text-[#E97408] font-semibold lg:text-[26px] lg:pl-[32px]
+ }
+ .parentContainer{
+     @apply px-0  
+ }
+ .firstChild{
+     @apply  md:px-6 md:pt-6 md:pb-6  md:py-5  sm:px-[32px] sm:py-[23px] bg-white  rounded-[15px]    flex justify-center  lg:py-[44px] lg:px-[32px]
+ }
+ 
+ .faqTitle{
+ 
+     @apply text-[16px] text-[#333333] font-medium leading-[24px] lg:text-[20px] w-full
+ }
+ .button{
+  
+     @apply  border border-pink-700 flex items-center justify-between w-[322px] sm:w-[401px] md:w-[599px] lg:w-[900px] xl:w-[880px] py-[23px] px-[9px] text-left sm:px-0 md:py-0
+ }
+ .paraWraper{
+     @apply bg-white xl:max-w-[880px] rounded-bl-lg rounded-br-lg
+ }
+ .paragraph{
+     @apply font-medium text-[16px] leading-6 text-[#858A8F] md:px-[32px] lg:pb-[7px]
+ } */

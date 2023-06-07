@@ -5,18 +5,22 @@ import { BsMinecartLoaded } from "react-icons/bs";
 import { AiOutlineDown } from "react-icons/ai";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { RxDividerVertical } from "react-icons/rx";
+import FreeDevilery from "../freedevivery/index.js"
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
     <>
       <div className="bg-[#222222] ">
         {/* navbar for  large   screens */}
-        <div className="md:flex hidden items-center p-4 justify-around">
+        <div className="md:flex hidden items-center py-4  justify-between container mx-auto">
           <div className="text-[#F02757] lg:text-[30px] text-[16px] font-mono font-[900]">
             <span className="text-white">Mobile</span>Shutter
           </div>
 
-          <div class="flex flex-col sm:flex-row items-center sm:px-1 sm:py-1 space-y-2 sm:space-y-0 space-x-0 sm:space-x-4 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500">
+          <div class="flex flex-col sm:flex-row md:hidden lg:flex items-center sm:px-1 sm:py-1 space-y-2 sm:space-y-0 space-x-0 sm:space-x-4 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500">
+          
             <div class="flex bg-gray-100  sm:w-72  w-full gap-1 items-center rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +74,8 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-[30px]">
             <div>
-              <CgProfile color="white" className="w-6 h-6" />
+              <Link to="/loginPage"> <CgProfile color="white" className="w-6 h-6" /></Link>
+             
             </div>
             <div className="flex items-start relative">
               <BsSuitHeart color="white" className="w-6 h-6" />
@@ -84,7 +89,7 @@ const Navbar = () => {
         </div>
         {/* navbar for  smalls   screens */}
 
-        <div className="md:hidden flex items-center p-6 justify-around">
+        <div className="md:hidden flex items-center p-6 lg:justify-around justify-between">
           <AiOutlineMenuFold className="w-6 h-6" color="white" />
 
           <div className="text-[#F02757] lg:text-[30px] text-[16px] font-mono font-[900]">
@@ -103,9 +108,9 @@ const Navbar = () => {
         {/* shop by categories */}
         <div className="bg-slate-300  w-full h-[1px] divide-gray-300"></div>
 
-        <div class="text-white bg-[#222222] md:flex hidden justify-around items-center">
-          <div className=" flex gap-[30px] items-center justify-between">
-            <span className="text-[20px] text-white font-[700]">
+        <div class="text-white bg-[#222222] md:flex hidden justify-between  container mx-auto items-center">
+          <div className=" flex lg:gap-[30px] items-center justify-between gap-[5px]">
+            <span className=" md:text-base lg:text-[20px] text-white font-[700]">
               Shop by categories
             </span>
             <AiOutlineMenuFold className="w-6 h-6" color="white" />
@@ -115,20 +120,33 @@ const Navbar = () => {
           </div>
           <div>
             <ul className="flex  items-center p-5">
-              <li className="px-5 text-[14px] font-semibold">HOME</li>
-              <li className="px-5 text-[14px] font-semibold">SHOP</li>
-              <li className="px-5 text-[14px] font-semibold">FAQS</li>
-              <li className="px-5 text-[14px] font-semibold">CONTACT US</li>
+              <Link to="/" className="px-5 text-[14px] font-semibold">
+                HOME
+              </Link>
+              <Link to="/about" className="px-5 text-[14px] font-semibold">
+                ABOUT
+              </Link>
+              <Link to="/shop" className="px-5 text-[14px] font-semibold">
+                SHOP
+              </Link>
+              <Link to="/faqs" className="px-5 text-[14px] font-semibold">
+                FAQS
+              </Link>
+              <Link to="/contact" className="px-5 text-[14px] font-semibold">
+                CONTACT US
+              </Link>
             </ul>
           </div>
           <div>
-            <div className="flex items-center text-[14px] font-normal gap-2">
+            <div className="grid lg:grid-cols-2 grid-cols-1 items-center text-[14px] font-normal lg:gap-2">
               <span>Need help? Call Us: </span>
               <span className="text-[#DC2828]">+84 2500 888 33</span>
             </div>
           </div>
         </div>
+
       </div>
+        <FreeDevilery/>
     </>
   );
 };
